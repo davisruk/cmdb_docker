@@ -4,7 +4,7 @@ services:
         image: davisruk/cmdb_db
         container_name: ${ENV_NAME}_cmdb_db
         volumes:
-            - "/{$ENV_NAME}/data:/var/lib/mysql"
+            - "~/$ENV_NAME/data:/var/lib/mysql"
     web:
         image: davisruk/cmdb_ui
         container_name: ${ENV_NAME}_cmdb_ui
