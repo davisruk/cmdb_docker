@@ -14,7 +14,7 @@ RUN mkdir -p /usr/src/cmdb-front-end
 
 WORKDIR /usr/src/cmdb-front-end
 
-COPY ./files/cmdb-front-end /usr/src/cmdb-front-end
+COPY ./target/cmdb-front-end /usr/src/cmdb-front-end
 
 RUN npm install typings --global && \
 	typings install && \
