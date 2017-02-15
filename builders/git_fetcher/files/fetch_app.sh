@@ -11,6 +11,7 @@ if [[ -n "${GIT_BRANCH}" ]]; then
   git checkout -t ${GIT_BRANCH}
 fi
 git pull
+rm -rf .git
 cd ../
 cp -r ${GIT_REPOSITORY} /target_out
 
